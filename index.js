@@ -2374,6 +2374,10 @@ if (reversed == null) { reversed = false; }
 		{
 		//Empresa
 			skull.tasa.text="";
+			skull.empresa_colaborador.text = "";
+			skull.tipo_credito.text = "";
+			skull.antiguedad.text = "";
+			skull.edad.text = "";
 			skull.alianzas_btn.visible = true;	
 			skull.bimbo_btn.visible = true;
 		//Tipo de credito	
@@ -2408,6 +2412,9 @@ if (reversed == null) { reversed = false; }
 			skull.bimbo_btn.visible = false;;
 		//Tipo de credito
 			skull.tasa.text="";
+			skull.tipo_credito.text = "";
+			skull.antiguedad.text = "";
+			skull.edad.text = "";
 			skull.nuevo_btn.visible = true;
 			skull.recompra_btn.visible = true;
 		//Antiguedad
@@ -2450,6 +2457,8 @@ if (reversed == null) { reversed = false; }
 			if (skull.tipo_credito.text == "Nuevo"){//xxxxxxxxxxxxxxxxxxxx
 		//Antiguedad
 			skull.tasa.text="";
+			skull.antiguedad.text = "";
+			skull.edad.text = "";
 			skull.menos1_btn.visible = true;
 			skull.de1a2_btn.visible = true;
 			skull.de26a40_btn.visible = true;
@@ -2467,6 +2476,8 @@ if (reversed == null) { reversed = false; }
 			if (skull.tipo_credito.text == "Recompra"){//xxxxxxxxxxxxxxxxxxxx
 		//Antiguedad
 			skull.tasa.text="";
+			skull.antiguedad.text = "";
+			skull.edad.text = "";
 			skull.menos1_btn.visible = false;
 			skull.de1a2_btn.visible = false;
 			skull.de26a40_btn.visible = false;
@@ -2509,6 +2520,7 @@ if (reversed == null) { reversed = false; }
 			skull.reco_masde40_btn.visible = false;
 		//Edad
 			skull.tasa.text="";
+			skull.edad.text = "";
 			skull.de18a24_btn.visible = true;
 			skull.de25a35_btn.visible = true;
 			skull.de36a45_btn.visible = true;
@@ -2678,8 +2690,8 @@ if (reversed == null) { reversed = false; }
 			skull.masde40_btn.visible = false;
 		}
 		
-		skull.de8a25_btn.addEventListener("click", select_de5a40);
-		function select_de5a40()
+		skull.de8a25_btn.addEventListener("click", select_de8a25);
+		function select_de8a25()
 		{
 			skull.antiguedad.text = "De 8 a 25 años";
 			skull.menos1_btn.visible = false;
@@ -2755,17 +2767,18 @@ if (reversed == null) { reversed = false; }
 			if (skull.antiguedad.text == "Mas de 40 años"){skull.tasa.text = "42.0 %";}
 			if (skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "42.0 %";}
 			if (skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "42.0 %";}
-			//if (skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "42.0 %";} se actualizo 2025
+			if (skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "42.0 %";} //se actualizo 2025
+			if (skull.edad.text == ""){skull.tasa.text = "";}
 			// Bimbo Nnuevos
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "39.6 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "36.5 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "39.6 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "36.1 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "35.1 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25  años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "41.1 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25  años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "38.6 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25  años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "35.4 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25  años" & skull.edad.text == "46 años o más"){skull.tasa.text = "31.4 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "41.1 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "38.6 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "35.4 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 8 a 25 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "31.4 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "29.8 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "28.8 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "30.2 %";}//ok
