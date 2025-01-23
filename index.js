@@ -2580,7 +2580,7 @@ if (reversed == null) { reversed = false; }
 		skull.reco_de1a2_btn.addEventListener("click", select_reco_de1a2);
 		function select_reco_de1a2()
 		{
-			skull.antiguedad.text = "De 1 de 2 años";
+			skull.antiguedad.text = "De 1 a 2 años";
 			skull.reco_menos1_btn.visible = false;
 			skull.reco_de1a2_btn.visible = false;
 			skull.reco_de2a3_btn.visible = false;
@@ -2593,7 +2593,7 @@ if (reversed == null) { reversed = false; }
 		skull.reco_de2a3_btn.addEventListener("click", select_reco_de2a3);
 		function select_reco_de2a3()
 		{
-			skull.antiguedad.text = "De 2 de 3 años";
+			skull.antiguedad.text = "De 2 a 3 años";
 			skull.reco_menos1_btn.visible = false;
 			skull.reco_de1a2_btn.visible = false;
 			skull.reco_de2a3_btn.visible = false;
@@ -2606,7 +2606,7 @@ if (reversed == null) { reversed = false; }
 		skull.reco_de3a5_btn.addEventListener("click", select_reco_de3a5);
 		function select_reco_de3a5()
 		{
-			skull.antiguedad.text = "De 3 de 5 años";
+			skull.antiguedad.text = "De 3 a 5 años";
 			skull.reco_menos1_btn.visible = false;
 			skull.reco_de1a2_btn.visible = false;
 			skull.reco_de2a3_btn.visible = false;
@@ -2619,7 +2619,7 @@ if (reversed == null) { reversed = false; }
 		skull.reco_de5a40_btn.addEventListener("click", select_reco_de5a40);
 		function select_reco_de5a40()
 		{
-			skull.antiguedad.text = "De 5 de 40 años";
+			skull.antiguedad.text = "De 5 a 40 años";
 			skull.reco_menos1_btn.visible = false;
 			skull.reco_de1a2_btn.visible = false;
 			skull.reco_de2a3_btn.visible = false;
@@ -2769,7 +2769,8 @@ if (reversed == null) { reversed = false; }
 			if (skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "42.0 %";}
 			if (skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "42.0 %";} //se actualizo 2025
 			if (skull.edad.text == ""){skull.tasa.text = "";}
-			// Bimbo Nnuevos
+			
+			{// Bimbo Nnuevos
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "39.6 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "36.5 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 3 a 7 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "39.6 %";}//ok
@@ -2783,21 +2784,6 @@ if (reversed == null) { reversed = false; }
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "28.8 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "30.2 %";}//ok
 			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "27.4 %";}//ok
-			// Bimbo Recompras
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "38.5 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "35.1 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "42.0 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "38.5 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "35.1 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "34.1 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "38.5 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "35.1 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "30.4 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "30.4 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "30.4 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "30.4 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "29.2 %";}//ok
-			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "29.2 %";}//ok
 			// Alianzas Nuevos
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "40.4 %";}//ok
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "40.4 %";}//ok
@@ -2812,6 +2798,22 @@ if (reversed == null) { reversed = false; }
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "32.7 %";}//ok
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "30.2 %";}//ok
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Nuevo" & skull.antiguedad.text == "De 26 a 40 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "30.2 %";}//ok
+			}
+			{// Bimbo Recompras
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "38.5 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "35.1 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "42.0 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "38.5 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "35.1 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 2 a 3 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "34.1 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "38.5 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "35.1 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "30.4 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 3 a 5 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "30.4 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "18 a 24 años"){skull.tasa.text = "30.4 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "30.4 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "29.2 %";}//ok
+			if (skull.empresa_colaborador.text == "Bimbo" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "29.2 %";}//ok
 			// Alianzas Recompras
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "41.0 %";}//ok
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 1 a 2 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "41.0 %";}//ok
@@ -2827,7 +2829,7 @@ if (reversed == null) { reversed = false; }
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "25 a 35 años"){skull.tasa.text = "33.8 %";}//ok
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "36 a 45 años"){skull.tasa.text = "31.6 %";}//ok
 			if (skull.empresa_colaborador.text == "Alianzas" & skull.tipo_credito.text == "Recompra" & skull.antiguedad.text == "De 5 a 40 años" & skull.edad.text == "46 años o más"){skull.tasa.text = "31.6 %";}//ok
-				
+			}	
 		//skull.tasa.text = "25%";
 		}
 		}//Termina Caluculo Tasa
